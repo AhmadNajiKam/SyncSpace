@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    width="256"
+    height="256"
+    viewBox="0 0 256 256"
+    xmlns="http://www.w3.org/2000/svg"
+    role="img"
+    aria-label="Syncspace Logo">
+
+
+  <!-- Connecting paths -->
+  <path
+      d="M64 128 H192"
+      stroke="#38BDF8"
+      stroke-width="12"
+      stroke-linecap="round"
+      opacity="0.6"/>
+
+  <path
+      d="M128 64 V192"
+      stroke="#38BDF8"
+      stroke-width="12"
+      stroke-linecap="round"
+      opacity="0.6"/>
+
+  <!-- Task nodes -->
+  <circle cx="64" cy="128" r="20" fill="#38BDF8"/>
+  <circle cx="128" cy="64" r="20" fill="#38BDF8"/>
+  <circle cx="192" cy="128" r="20" fill="#38BDF8"/>
+  <circle cx="128" cy="192" r="20" fill="#38BDF8"/>
+
+  <!-- Central sync core -->
+  <circle
+      cx="128"
+      cy="128"
+      r="28"
+      fill="none"
+      stroke="#1B3C53"
+      stroke-width="10"/>
+
+</svg>
+

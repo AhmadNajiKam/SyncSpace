@@ -1,6 +1,9 @@
 import { useState } from "react";
 import LeftImage from "../assets/leftImage.jpg";
 import styles from "../styles/Register.module.css";
+import { FaGoogle } from "react-icons/fa";
+import SyncSpaceLogo from "../assets/SyncSpace.svg";
+import { Typewriter } from 'react-simple-typewriter';
 const Register = () => {
 
   const [formData, setFormData] = useState({
@@ -23,6 +26,13 @@ const Register = () => {
   return <>
     <div className={styles.wholeBox}>
       <div className={styles.leftPart}>
+        <img src={SyncSpaceLogo} width="75px" className={styles.logo} />
+        <p>
+          Syncspace helps teams
+          <Typewriter cursor={true} typeSpeed={30} deleteSpeed={30} loop={0} words={[' Organize Work', ' Align Priorities', ' Execute With Clarity']}>
+          </Typewriter>
+          <br /> and all in one place.
+        </p>
         <img src={LeftImage} className={styles.leftImage} />
       </div>
       <div className={styles.rightPart}><h3>Create an account</h3>
@@ -46,7 +56,10 @@ const Register = () => {
           </div>
 
           <button type="submit">Create Account</button>
-          <button type="submit">Sign up with Google</button>
+          <button type="submit" className={styles.googleButton}>
+            <FaGoogle />
+            Sign up with Google
+          </button>
         </form>
 
       </div>
